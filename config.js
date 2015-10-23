@@ -1,15 +1,30 @@
 System.config({
-  baseURL: "",
+  baseURL: "/",
   defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
-    "optional": [
-      "runtime"
-    ]
+  transpiler: "typescript",
+  typescriptOptions: {
+    "noImplicitAny": false,
+    "typeCheck": true,
+    "tsconfig": true
   },
   paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
+  },
+
+  packages: {
+    "src": {
+      "main": "index",
+      "defaultExtension": "ts",
+      "meta": {
+        "*.ts": {
+          "loader": "ts"
+        },
+        "*.css": {
+          "loader": "css"
+        }
+      }
+    }
   },
 
   map: {
@@ -18,13 +33,12 @@ System.config({
     "angular-messages": "github:angular/bower-angular-messages@1.4.7",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "angular-ui-router-title": "npm:angular-ui-router-title@0.0.4",
-    "babel": "npm:babel-core@5.8.25",
-    "babel-runtime": "npm:babel-runtime@5.8.25",
     "clean-css": "npm:clean-css@3.4.6",
-    "core-js": "npm:core-js@1.2.3",
     "css": "github:systemjs/plugin-css@0.1.19",
     "html": "github:systemjs/plugin-text@0.0.2",
     "text": "github:systemjs/plugin-text@0.0.2",
+    "ts": "github:frankwallis/plugin-typescript@2.1.2",
+    "typescript": "npm:typescript@1.6.2",
     "github:angular-ui/ui-router@0.2.15": {
       "angular": "github:angular/bower-angular@1.4.7"
     },
@@ -39,6 +53,9 @@ System.config({
       "angular-animate": "github:angular/bower-angular-animate@1.4.7",
       "angular-aria": "github:angular/bower-angular-aria@1.4.7",
       "css": "github:systemjs/plugin-css@0.1.19"
+    },
+    "github:frankwallis/plugin-typescript@2.1.2": {
+      "typescript": "npm:typescript@1.6.2"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -90,9 +107,6 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.25": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:buffer@3.5.1": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
@@ -118,12 +132,6 @@ System.config({
       "graceful-readlink": "npm:graceful-readlink@1.0.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:core-js@1.2.3": {
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"

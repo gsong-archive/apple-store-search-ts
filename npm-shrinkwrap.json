@@ -1156,7 +1156,8 @@
           "dependencies": {
             "readable-stream": {
               "version": "1.1.13",
-              "from": "readable-stream@>=1.0.33 <2.0.0"
+              "from": "readable-stream@1.1.13",
+              "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.13.tgz"
             }
           }
         },
@@ -2501,7 +2502,8 @@
           "dependencies": {
             "graceful-fs": {
               "version": "3.0.8",
-              "from": "graceful-fs@>=3.0.2 <4.0.0"
+              "from": "graceful-fs@3.0.8",
+              "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.8.tgz"
             }
           }
         },
@@ -3736,7 +3738,8 @@
       "dependencies": {
         "esprima": {
           "version": "2.7.0",
-          "from": "esprima@>=2.6.0 <3.0.0"
+          "from": "esprima@2.7.0",
+          "resolved": "https://registry.npmjs.org/esprima/-/esprima-2.7.0.tgz"
         }
       }
     },
@@ -6027,6 +6030,11 @@
       "version": "0.0.6",
       "from": "typedarray@>=0.0.5 <0.1.0",
       "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
+    },
+    "typescript": {
+      "version": "1.6.2",
+      "from": "typescript@*",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz"
     },
     "ua-parser-js": {
       "version": "0.7.9",

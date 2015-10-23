@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import {makeSettings} from 'gulp-tasks';
 
-import environments from './src/config/environments';
+import environments from './src/config/environments.ts';
 
 
 makeSettings(environments);
