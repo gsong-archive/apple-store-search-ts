@@ -1,4 +1,6 @@
-import angular from 'angular';
+/// <reference path="../../..//typings/tsd.d.ts" />
+
+import * as angular from 'angular';
 import ngMaterial from 'angular-material';
 import ngMessages from 'angular-messages';
 

@@ -1,29 +1,20 @@
+/* global System */
 System.config({
-  baseURL: "/",
+  baseURL: ".",
   defaultJSExtensions: true,
   transpiler: "typescript",
-  typescriptOptions: {
-    "noImplicitAny": false,
-    "typeCheck": true,
-    "tsconfig": true
-  },
   paths: {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "npm:*": "jspm_packages/npm/*",
+    "github:*": "jspm_packages/github/*"
   },
 
   packages: {
-    "src": {
+    "jspm_packages": {
+      "defaultExtension": "js"
+    },
+    ".": {
       "main": "index",
-      "defaultExtension": "ts",
-      "meta": {
-        "*.ts": {
-          "loader": "ts"
-        },
-        "*.css": {
-          "loader": "css"
-        }
-      }
+      "defaultExtension": "ts"
     }
   },
 

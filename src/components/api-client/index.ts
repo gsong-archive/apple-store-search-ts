@@ -1,4 +1,6 @@
-import angular from 'angular';
+/// <reference path="../../../typings/tsd.d.ts" />
+
+import * as angular from 'angular';
 
 import factory from './service';
 

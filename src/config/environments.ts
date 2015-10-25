@@ -1,3 +1,5 @@
+/// <reference path="../jspm_packages/npm/typescript@1.6.2/lib/lib.core.es6.d.ts" />
+
 const MEDIA_TYPES = [
   ['all', 'All'],
   ['movie', 'Movie'],
