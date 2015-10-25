@@ -1,11 +1,12 @@
-import settings from '../../config/settings';
+import settings from "../../config/settings";
 
 
 export default class {
-  constructor($log) {
-    'ngInject';
+  settings;
 
-    this.$log = $log;
+  constructor(private $log) {
+    "ngInject";
+
     this.settings = settings;
   }
 }

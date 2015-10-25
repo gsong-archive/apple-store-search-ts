@@ -1,10 +1,8 @@
-/// <reference path="../typings/tsd.d.ts" />
+import * as angular from "angular";
 
-import * as angular from 'angular';
-
-import app from './app/index';
+import app from "./app/index";
 
 
-angular.element(window.document).ready(function() {
-  angular.bootstrap(window.document, [app], {strictDi: false});
+angular.element(document).ready(function() {
+  angular.bootstrap(document, [app], {strictDi: false});
 });

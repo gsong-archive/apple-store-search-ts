@@ -1,37 +1,37 @@
-import {ResultsController, SearchController} from './controller';
-import {makeTitle} from '../utils';
-import {search as response} from './resolver';
+import {ResultsController, SearchController} from "./controller";
+import {makeTitle} from "../utils";
+import {search as response} from "./resolver";
 
-import baseTemplate from './_base.html!';
-import resultsTemplate from './results.html!';
+import baseTemplate from "./_base.html";
+import resultsTemplate from "./results.html";
 
 
 export default function ($stateProvider) {
-  'ngInject';
+  "ngInject";
 
   $stateProvider
 
-  .state('_search-base', {
-    parent: '_base',
+  .state("_search-base", {
+    parent: "_base",
     abstract: true,
 
     controller: SearchController,
-    controllerAs: 'vm',
+    controllerAs: "vm",
     template: baseTemplate
   })
 
-  .state('search', {
-    parent: '_search-base',
-    url: '/search?media&term',
+  .state("search", {
+    parent: "_search-base",
+    url: "/search?media&term",
     params: {
-      media: {value: 'all', squash: true},
-      term: {value: '', squash: true}
+      media: {value: "all", squash: true},
+      term: {value: "", squash: true}
     },
 
     controller: ResultsController,
-    controllerAs: 'vm',
+    controllerAs: "vm",
     template: resultsTemplate,
-    resolve: {$title: () => makeTitle('Search'), response}
+    resolve: {$title: () => makeTitle("Search"), response}
   })
   ;
 }

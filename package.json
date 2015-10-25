@@ -24,8 +24,7 @@
     "gulp": "~3.9.0",
     "gulp-tasks": "github:gsong/gulp-tasks#v0.1.1",
     "gulp-tslint": "~3.4.0",
-    "jspm": "~0.16.0",
-    "typescript": "~1.6.2"
+    "jspm": "~0.16.0"
   },
   "jspm": {
     "directories": {

@@ -1,4 +1,4 @@
-<div layout="column">
+const _template = `<div layout="column">
   <form name="searchForm" ng-submit="vm.search(vm.queryParams)"
     style="padding:15px;">
 
@@ -40,4 +40,6 @@
   <md-divider/>
 
   <ui-view/>
-</div>
+</div>`;
+
+export default _template;

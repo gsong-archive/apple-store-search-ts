@@ -1,4 +1,4 @@
-<md-content ng-if="vm.showResults && !stateIsLoading">
+const _template = `<md-content ng-if="vm.showResults && !stateIsLoading">
   <md-list>
     <md-subheader>{{ vm.response.resultCount }} Results</md-subheader>
     <md-list-item class="md-3-line" ng-repeat="item in vm.response.results">
@@ -13,4 +13,6 @@
       <md-divider ng-if="!$last"></md-divider>
     </md-list-item>
   </md-list>
-</md-content>
+</md-content>`;
+
+export default _template;

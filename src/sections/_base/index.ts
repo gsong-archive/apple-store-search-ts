@@ -1,26 +1,26 @@
-import angular from 'angular';
-import ngMaterial from 'angular-material';
+import * as angular from "angular";
+import "angular-material";
 
-import 'angular-ui-router';
+import "angular-ui-router";
 
-import controller from './controller';
+import controller from "./controller";
 
-// import './styles.css';
-import template from './template.html!';
+// import "./styles.css";
+import template from "./template.html";
 
 
 function route($stateProvider) {
-  'ngInject';
+  "ngInject";
 
-  $stateProvider.state('_base', {
+  $stateProvider.state("_base", {
     abstract: true,
     controller,
-    controllerAs: 'vm',
+    controllerAs: "vm",
     template
   });
 }
 
 
-export default angular.module('app._base', [ngMaterial, 'ui.router'])
+export default angular.module("app._base", ["ngMaterial", "ui.router"])
 .config(route)
 .name;

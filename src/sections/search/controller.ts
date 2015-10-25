@@ -1,31 +1,32 @@
-import settings from '../../config/settings';
+import settings from "../../config/settings";
 
 
 export class SearchController {
-  constructor($log, $state, session) {
-    'ngInject';
+  queryParams;
+  searchTypes;
 
-    this.$log = $log;
-    this.$state = $state;
+  constructor(private $log, private $state, session) {
+    "ngInject";
+
     this.queryParams = session.queryParams;
     this.searchTypes = settings.MEDIA_TYPES;
   }
 
   search(queryParams) {
     const params = queryParams || settings.DEFAULT_QUERY_PARAMS;
-    this.$state.go('search', params);
+    this.$state.go("search", params);
   }
 }
 
 
 export class ResultsController {
-  constructor($log, $scope, $state, response) {
-    'ngInject';
+  response;
 
-    $log.debug('Search response: ', response);
+  constructor(private $log, $scope, private $state, response) {
+    "ngInject";
 
-    this.$log = $log;
-    this.$state = $state;
+    $log.debug("Search response: ", response);
+
     this.response = response;
   }
 

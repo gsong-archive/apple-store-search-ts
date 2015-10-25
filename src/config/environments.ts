@@ -1,25 +1,23 @@
-/// <reference path="../jspm_packages/npm/typescript@1.6.2/lib/lib.core.es6.d.ts" />
-
 const MEDIA_TYPES = [
-  ['all', 'All'],
-  ['movie', 'Movie'],
-  ['podcast', 'Podcast'],
-  ['music', 'Music'],
-  ['musicVideo', 'Music Video'],
-  ['audiobook', 'Audiobook'],
-  ['shortFilm', 'Short Film'],
-  ['tvShow', 'TV Show'],
-  ['software', 'Software'],
-  ['ebook', 'eBook']
+  ["all", "All"],
+  ["movie", "Movie"],
+  ["podcast", "Podcast"],
+  ["music", "Music"],
+  ["musicVideo", "Music Video"],
+  ["audiobook", "Audiobook"],
+  ["shortFilm", "Short Film"],
+  ["tvShow", "TV Show"],
+  ["software", "Software"],
+  ["ebook", "eBook"]
 ];
 
 
 const shared = {
-  API_URL: 'https://itunes.apple.com',
+  API_URL: "https://itunes.apple.com",
   MEDIA_TYPES: MEDIA_TYPES.map(([k, v]) => ({key: k, label: v})),
   DEFAULT_QUERY_PARAMS: {
-    media: 'all',
-    term: ''
+    media: "all",
+    term: ""
   }
 };
 

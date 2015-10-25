@@ -1,6 +1,8 @@
 .DS_STORE
 .tmp
 build
+built
 jspm_packages
 node_modules
-src/config/settings.js
+src/config/settings.ts
+src/typings

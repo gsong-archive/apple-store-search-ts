@@ -1,11 +1,11 @@
 export function search(
   $log, $state, $stateParams, apiClient, session
 ) {
-  'ngInject';
+  "ngInject";
 
   Object.assign(session.queryParams, $stateParams);
 
-  $log.debug('Resolving state', $state);
+  $log.debug("Resolving state", $state);
 
   if (!$stateParams.term) {
     return;

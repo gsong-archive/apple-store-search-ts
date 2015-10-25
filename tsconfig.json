@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": true,
+    "rootDir": "./src",
+    "outDir": "./built",
+    "sourceMap": false
+  },
+  "filesGlob": [
+    "./src/typings/tsd.d.ts",
+    "./src/**/*.ts",
+    "!./src/jspm_packages/**/*.ts"
+  ],
+  "files": [
+    "src/typings/tsd.d.ts",
+    "src/app/config.ts",
+    "src/app/index.ts",
+    "src/app/run.ts",
+    "src/components/api-client/index.ts",
+    "src/components/api-client/service.ts",
+    "src/components/api-client/urls.ts",
+    "src/components/session/index.ts",
+    "src/components/session/service.ts",
+    "src/config/environments.ts",
+    "src/config/settings.ts",
+    "src/index.ts",
+    "src/sections/_base/controller.ts",
+    "src/sections/_base/index.ts",
+    "src/sections/_base/template.html.ts",
+    "src/sections/search/_base.html.ts",
+    "src/sections/search/controller.ts",
+    "src/sections/search/index.ts",
+    "src/sections/search/resolver.ts",
+    "src/sections/search/results.html.ts",
+    "src/sections/search/route.ts",
+    "src/sections/utils.ts",
+    "src/typings/angular-material/angular-material.d.ts",
+    "src/typings/angular-ui-router/angular-ui-router.d.ts",
+    "src/typings/angularjs/angular-route.d.ts",
+    "src/typings/angularjs/angular.d.ts",
+    "src/typings/jquery/jquery.d.ts"
+  ],
+  "exclude": []
+}
