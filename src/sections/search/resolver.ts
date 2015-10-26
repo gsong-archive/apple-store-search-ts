@@ -1,4 +1,4 @@
-import {IApiClient} from "../../components/api-client/interfaces";
+import {IApiClient, IResult} from "../../components/api-client/interfaces";
 import {ISession} from "../../components/session/interfaces";
 
 
@@ -20,7 +20,7 @@ export function search(
   }
 
   return apiClient.search($stateParams)
-  .then((response: angular.IHttpPromiseCallbackArg<any>) => {
+  .then((response: angular.IHttpPromiseCallbackArg<IResult>) => {
     return response.data;
   });
 }

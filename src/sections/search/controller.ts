@@ -1,6 +1,7 @@
-import settings from "../../config/settings";
-import {IQueryParams, ISession} from "../../components/session/interfaces";
 import {IMediaTypes} from "../../config/interfaces";
+import {IQueryParams, ISession} from "../../components/session/interfaces";
+import {IResult} from "../../components/api-client/interfaces";
+import settings from "../../config/settings";
 
 
 export class SearchController {
@@ -30,7 +31,7 @@ export class ResultsController {
     private $log: angular.ILogService,
     $scope: angular.IScope,
     private $state: ng.ui.IStateService,
-    private response: any
+    private response: IResult
   ) {
     "ngInject";
 

@@ -9,7 +9,7 @@ interface IMediaType {
 
 export interface IMediaTypes {
   [i: number]: IMediaType;
-};
+}
 
 
 export interface ISettings {
@@ -18,4 +18,4 @@ export interface ISettings {
   ENABLE_DEBUG_LOGGING: Boolean;
   HTTP_CACHE_SIZE: number;
   MEDIA_TYPES: IMediaTypes;
-};
+}
