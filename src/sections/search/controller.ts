@@ -1,18 +1,24 @@
 import settings from "../../config/settings";
+import {IQueryParams, ISession} from "../../components/session/interfaces";
+import {IMediaTypes} from "../../config/interfaces";
 
 
 export class SearchController {
-  queryParams;
-  searchTypes;
+  queryParams: IQueryParams;
+  searchTypes: IMediaTypes;
 
-  constructor(private $log, private $state, session) {
+  constructor(
+    private $log: angular.ILogService,
+    private $state: ng.ui.IStateService,
+    session: ISession
+  ) {
     "ngInject";
 
     this.queryParams = session.queryParams;
     this.searchTypes = settings.MEDIA_TYPES;
   }
 
-  search(queryParams) {
+  search(queryParams: IQueryParams) {
     const params = queryParams || settings.DEFAULT_QUERY_PARAMS;
     this.$state.go("search", params);
   }
@@ -20,17 +26,18 @@ export class SearchController {
 
 
 export class ResultsController {
-  response;
-
-  constructor(private $log, $scope, private $state, response) {
+  constructor(
+    private $log: angular.ILogService,
+    $scope: angular.IScope,
+    private $state: ng.ui.IStateService,
+    private response: any
+  ) {
     "ngInject";
 
     $log.debug("Search response: ", response);
-
-    this.response = response;
   }
 
   get showResults() {
-    return Boolean(this.$state.params.term);
+    return Boolean(this.$state.params["term"]);
   }
 }

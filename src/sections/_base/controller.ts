@@ -1,10 +1,11 @@
 import settings from "../../config/settings";
+import {ISettings} from "../../config/interfaces";
 
 
 export default class {
-  settings;
+  settings: ISettings;
 
-  constructor(private $log) {
+  constructor(private $log: angular.ILogService) {
     "ngInject";
 
     this.settings = settings;

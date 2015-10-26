@@ -1,8 +1,9 @@
 import settings from "../../config/settings";
+import {IQueryParams} from "./interfaces";
 
 
 export default class {
-  queryParams: {media: string, term: string};
+  queryParams: IQueryParams;
 
   constructor() {
     this.queryParams = Object.assign({}, settings.DEFAULT_QUERY_PARAMS);

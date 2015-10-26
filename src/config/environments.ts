@@ -1,3 +1,6 @@
+import {ISettings} from "./interfaces";
+
+
 const MEDIA_TYPES = [
   ["all", "All"],
   ["movie", "Movie"],
@@ -22,13 +25,13 @@ const shared = {
 };
 
 
-const development = Object.assign({
+const development: ISettings = Object.assign({
   HTTP_CACHE_SIZE: 100,
   ENABLE_DEBUG_LOGGING: true
 }, shared);
 
 
-const production = Object.assign({
+const production: ISettings = Object.assign({
   HTTP_CACHE_SIZE: 5000,
   ENABLE_DEBUG_LOGGING: false
 }, shared);

@@ -6,7 +6,7 @@ import baseTemplate from "./_base.html";
 import resultsTemplate from "./results.html";
 
 
-export default function ($stateProvider) {
+export default function ($stateProvider: ng.ui.IStateProvider) {
   "ngInject";
 
   $stateProvider

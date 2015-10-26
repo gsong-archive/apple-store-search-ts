@@ -1,4 +1,7 @@
-export function setStateIsLoading($rootScope: any) {
+import {IRootScopeService} from "./interfaces";
+
+
+export function setStateIsLoading($rootScope: IRootScopeService) {
   "ngInject";
 
   const scope = $rootScope;
@@ -13,15 +16,19 @@ export function setStateIsLoading($rootScope: any) {
 export function logStateEvents(
   $log: angular.ILogService,
   $cacheFactory: angular.ICacheFactoryService,
-  $rootScope: any
+  $rootScope: IRootScopeService
 ) {
   "ngInject";
 
   const scope = $rootScope;
 
-  scope.$on("$stateChangeError", (e: any) => $log.debug(`${e.name}`));
-  scope.$on("$stateChangeStart", (e: any) => $log.debug(`${e.name}`));
-  scope.$on("$stateChangeSuccess", (e: any) => {
+  scope.$on(
+    "$stateChangeError", (e: angular.IAngularEvent) => $log.debug(`${e.name}`)
+  );
+  scope.$on(
+    "$stateChangeStart", (e: angular.IAngularEvent) => $log.debug(`${e.name}`)
+  );
+  scope.$on("$stateChangeSuccess", (e: angular.IAngularEvent) => {
     const cache = $cacheFactory.get("_http");
 
     $log.debug(`${e.name}`);
@@ -29,5 +36,7 @@ export function logStateEvents(
       $log.debug("httpCache:", cache.info());
     }
   });
-  scope.$on("$stateNotFound", (e: any) => $log.debug(`${e.name}`));
+  scope.$on("$stateNotFound", (
+    e: angular.IAngularEvent) => $log.debug(`${e.name}`)
+  );
 }

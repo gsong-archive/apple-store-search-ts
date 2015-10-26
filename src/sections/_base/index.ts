@@ -9,7 +9,7 @@ import controller from "./controller";
 import template from "./template.html";
 
 
-function route($stateProvider) {
+function route($stateProvider: ng.ui.IStateProvider) {
   "ngInject";
 
   $stateProvider.state("_base", {

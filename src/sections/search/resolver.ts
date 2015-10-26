@@ -1,5 +1,13 @@
+import {IApiClient} from "../../components/api-client/interfaces";
+import {ISession} from "../../components/session/interfaces";
+
+
 export function search(
-  $log, $state, $stateParams, apiClient, session
+  $log: angular.ILogService,
+  $state: ng.ui.IStateService,
+  $stateParams: ng.ui.IStateParamsService,
+  apiClient: IApiClient,
+  session: ISession
 ) {
   "ngInject";
 
@@ -7,12 +15,12 @@ export function search(
 
   $log.debug("Resolving state", $state);
 
-  if (!$stateParams.term) {
+  if (!$stateParams["term"]) {
     return;
   }
 
   return apiClient.search($stateParams)
-  .then((response) => {
+  .then((response: angular.IHttpPromiseCallbackArg<any>) => {
     return response.data;
   });
 }
