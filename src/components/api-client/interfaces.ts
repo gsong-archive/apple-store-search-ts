@@ -7,7 +7,7 @@ export interface IParams extends IQueryParams {
 }
 
 
-interface IResultDetail {
+export interface IResultDetail {
   wrapperType: string;
   kind: string;
   artistName?: string;

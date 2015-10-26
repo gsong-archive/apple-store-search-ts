@@ -1,7 +1,7 @@
 import {IQueryParams} from "../components/session/interfaces";
 
 
-interface IMediaType {
+export interface IMediaType {
   key: string;
   label: string;
 }
