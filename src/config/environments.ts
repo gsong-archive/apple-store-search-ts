@@ -1,4 +1,5 @@
 import {ISettings} from "./interfaces";
+import * as packageSpec from "../../package.json";
 
 
 const MEDIA_TYPES = [
@@ -18,6 +19,7 @@ const MEDIA_TYPES = [
 const shared = {
   API_URL: "https://itunes.apple.com",
   MEDIA_TYPES: MEDIA_TYPES.map(([k, v]) => ({key: k, label: v})),
+  VERSION: packageSpec.version,
   DEFAULT_QUERY_PARAMS: {
     media: "all",
     term: ""
