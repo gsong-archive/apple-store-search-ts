@@ -21,7 +21,6 @@
     "eslint": "~1.7.3",
     "gulp": "~3.9.0",
     "gulp-tasks-ts": "github:gsong/gulp-tasks-ts#v0.1.0",
-    "gulp-tslint": "~3.4.0",
     "jspm": "~0.16.0",
     "tslint": "~2.5.1",
     "typescript": "~1.6.2"
