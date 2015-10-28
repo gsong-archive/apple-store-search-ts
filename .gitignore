@@ -1,8 +1,10 @@
 .DS_STORE
 .tmp
+.tsc_build
 build
-built
 jspm_packages
 node_modules
+src/components/**/*.js
+src/config/**/*.js
 src/config/settings.ts
 src/typings

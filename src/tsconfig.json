@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": true,
+    "rootDir": ".",
+    "outDir": "../.tsc_build",
+    "sourceMap": false
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "typings/tsd.d.ts",
+    "!jspm_packages/**/*.ts"
+  ],
+  "files": [
+    "app/config.ts",
+    "app/index.ts",
+    "app/interfaces.ts",
+    "app/run.ts",
+    "components/api-client/index.ts",
+    "components/api-client/interfaces.ts",
+    "components/api-client/service.ts",
+    "components/api-client/urls.ts",
+    "components/session/index.ts",
+    "components/session/interfaces.ts",
+    "components/session/service.ts",
+    "config/environments.ts",
+    "config/interfaces.ts",
+    "index.ts",
+    "sections/_base/controller.ts",
+    "sections/_base/index.ts",
+    "sections/_base/template.html.ts",
+    "sections/search/_base.html.ts",
+    "sections/search/controller.ts",
+    "sections/search/index.ts",
+    "sections/search/resolver.ts",
+    "sections/search/results.html.ts",
+    "sections/search/route.ts",
+    "sections/utils.ts",
+    "typings/angular-material/angular-material.d.ts",
+    "typings/angular-ui-router/angular-ui-router.d.ts",
+    "typings/angularjs/angular-route.d.ts",
+    "typings/angularjs/angular.d.ts",
+    "typings/gulp/gulp.d.ts",
+    "typings/jquery/jquery.d.ts",
+    "typings/node/node.d.ts",
+    "typings/orchestrator/orchestrator.d.ts",
+    "typings/q/Q.d.ts",
+    "typings/tsd.d.ts"
+  ],
+  "exclude": []
+}

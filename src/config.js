@@ -27,7 +27,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.19",
     "html": "github:systemjs/plugin-text@0.0.2",
     "text": "github:systemjs/plugin-text@0.0.2",
-    "ts": "github:frankwallis/plugin-typescript@2.1.2",
+    "ts": "github:frankwallis/plugin-typescript@2.1.4",
     "typescript": "npm:typescript@1.6.2",
     "github:angular-ui/ui-router@0.2.15": {
       "angular": "github:angular/bower-angular@1.4.7"
@@ -44,7 +44,7 @@ System.config({
       "angular-aria": "github:angular/bower-angular-aria@1.4.7",
       "css": "github:systemjs/plugin-css@0.1.19"
     },
-    "github:frankwallis/plugin-typescript@2.1.2": {
+    "github:frankwallis/plugin-typescript@2.1.4": {
       "typescript": "npm:typescript@1.6.2"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
