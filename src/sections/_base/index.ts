@@ -5,8 +5,8 @@ import "angular-ui-router";
 
 import controller from "./controller";
 
-// import "./styles.css";
-import template from "./template.html";
+import "./styles.css!";
+import template from "./template.html!";
 
 
 function route($stateProvider: ng.ui.IStateProvider) {
