@@ -15,7 +15,7 @@ You can [see the app in action][app].
 ## Major Concepts Demonstrated
 
 * Uses [UI Router][] for state based and nested routing
-* Uses jpsm instead of Bower or npm to manage packages for the browser
+* Uses jspm instead of Bower or npm to manage packages for the browser
 * Uses [SystemJS][] to load modules
 * Sass compilation using [LibSass][] and [Autoprefixer][]
 * Local dev server with [LiveReload](http://livereload.com/) using
@@ -35,10 +35,10 @@ You can [see the app in action][app].
     `https://github.com/gsong/apple-store-search-ts.git`.
 2. Make sure you have `node` installed on your machine. [nvm][] is highly
    recommended.
-3. Install Gulp, jspm, TypeScript, and [TSD][] globally:
+3. Install Gulp, jspm, and [TSD][] globally:
 
     ```
-    npm install -g gulp jspm typescript tsd
+    npm install -g gulp jspm tsd
     ```
 
 4. `npm install` then `jspm install` to instal development and browser packages.
