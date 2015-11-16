@@ -1,13 +1,13 @@
-# Universal Apple Store Search
+# Universal Apple Store Search (TypeScript Edition)
 
 This is a fully functional app demonstrating latest best practices in Angular,
-using ES6 and jspm. The backend is [Apple's Search API][apple api].
+using TypeScript and jspm. The backend is [Apple's Search API][apple api].
 
 You can [see the app in action][app].
 
 ## Primary Technologies
 
-* Transpiles ES6+ automagically using [Babel][]
+* Transpiles TypeScript
 * Package management using [jspm][]
 * Develop and build using [Gulp][] and friends
 
@@ -22,8 +22,8 @@ You can [see the app in action][app].
     [Browsersync][]
 * Define and maintain consistent coding styles between different editors using
     [EditorConfig][]
-* Linting with [ESLint][]
-* Gulp tasks are written using ES6, of course.
+* Linting with [TSLint][]
+* Gulp tasks are written using TypeScript, of course.
 * Multiple `serve` modes to facilitate development speed or simulate production
     environment.
 * Per environment setting determined at build time.
@@ -32,13 +32,19 @@ You can [see the app in action][app].
 ## Usage
 
 1. Fork and clone this repo from
-    `https://github.com/gsong/apple-store-search.git`.
+    `https://github.com/gsong/apple-store-search-ts.git`.
 2. Make sure you have `node` installed on your machine. [nvm][] is highly
    recommended.
-3. Install Gulp and jspm globally: `npm install -g gulp jspm`.
+3. Install Gulp, jspm, TypeScript, and [TSD][] globally:
+
+    ```
+    npm install -g gulp jspm typescript tsd
+    ```
+
 4. `npm install` then `jspm install` to instal development and browser packages.
-5. Run `gulp` to start the local dev server.
-6. Make your own enhancements! 😀
+5. `tsd install` to install the proper type definitions.
+6. Run `gulp` to start the local dev server.
+7. Make your own enhancements! 😀
 
 
 ## Building and Publishing
@@ -66,22 +72,22 @@ gulp.
 [No rights reserved][unlicensed]. Made with 🐣 by [George Song][gs twitter].
 
 
-[app]: http://gsong.github.io/apple-store-search
+[app]: http://gsong.github.io/apple-store-search-ts
 [apple api]: https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html
 [autoprefixer]: https://github.com/postcss/autoprefixer
-[babel]: https://babeljs.io/
 [browsersync]: http://www.browsersync.io
 [editorconfig]: http://editorconfig.org
-[eslint]: http://eslint.org/
 [gs twitter]: https://twitter.com/zukefresh
 [gulp]: http://gulpjs.com
 [gulper]: https://github.com/anatoo/gulper
 [jspm]: http://jspm.io
 [libsass]: http://libsass.org/
-[new issue]: https://github.com/gsong/apple-store-search/issues/new
+[new issue]: https://github.com/gsong/apple-store-search-ts/issues/new
 [nvm]: https://github.com/creationix/nvm
-[pull request]: https://github.com/gsong/apple-store-search/compare/
+[pull request]: https://github.com/gsong/apple-store-search-ts/compare/
 [systemjs]: https://github.com/systemjs/systemjs
-[todo]: https://github.com/gsong/apple-store-search/blob/development/TODO.md
+[todo]: https://github.com/gsong/apple-store-search-ts/blob/development/TODO.md
+[tsd]: http://definitelytyped.org/tsd/
+[tslint]: http://palantir.github.io/tslint/
 [UI Router]: http://angular-ui.github.io/ui-router/site/#/api/ui.router
 [unlicensed]: http://unlicense.org/
