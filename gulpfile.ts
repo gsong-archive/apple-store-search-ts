@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import {makeSettings} from "gulp-tasks-ts";
 import * as gulp from "gulp";
 

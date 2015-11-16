@@ -1,3 +1,4 @@
+require("babel-polyfill");
 var gulp_tasks_ts_1 = require("gulp-tasks-ts");
 var gulp = require("gulp");
 var environments_1 = require("./src/config/environments");

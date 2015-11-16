@@ -12,7 +12,7 @@
     "src/typings/tsd.d.ts"
   ],
   "files": [
-    "gulpfile.babel.ts",
+    "gulpfile.ts",
     "src/typings/tsd.d.ts"
   ],
   "exclude": []
