@@ -40,7 +40,6 @@ You can [see the app in action][app].
     ```
     npm install -g gulp jspm tsd
     ```
-
 4. `npm install` then `jspm install` to instal development and browser packages.
 5. `tsd install` to install the proper type definitions.
 6. Run `gulp` to start the local dev server.
