@@ -23,11 +23,11 @@ System.config({
     "angular-messages": "github:angular/bower-angular-messages@1.4.7",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "angular-ui-router-title": "npm:angular-ui-router-title@0.0.4",
-    "clean-css": "npm:clean-css@3.4.6",
+    "clean-css": "npm:clean-css@3.4.8",
     "css": "github:systemjs/plugin-css@0.1.19",
     "html": "github:systemjs/plugin-text@0.0.2",
     "text": "github:systemjs/plugin-text@0.0.2",
-    "ts": "github:frankwallis/plugin-typescript@2.1.4",
+    "ts": "github:frankwallis/plugin-typescript@2.2.2",
     "typescript": "npm:typescript@1.6.2",
     "github:angular-ui/ui-router@0.2.15": {
       "angular": "github:angular/bower-angular@1.4.7"
@@ -44,14 +44,14 @@ System.config({
       "angular-aria": "github:angular/bower-angular-aria@1.4.7",
       "css": "github:systemjs/plugin-css@0.1.19"
     },
-    "github:frankwallis/plugin-typescript@2.1.4": {
+    "github:frankwallis/plugin-typescript@2.2.2": {
       "typescript": "npm:typescript@1.6.2"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.5.1"
+      "buffer": "npm:buffer@3.5.2"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -97,12 +97,12 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:buffer@3.5.1": {
+    "npm:buffer@3.5.2": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
     },
-    "npm:clean-css@3.4.6": {
+    "npm:clean-css@3.4.8": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "commander": "npm:commander@2.8.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
